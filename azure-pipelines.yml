@@ -6,7 +6,7 @@ stages:
   displayName: LoadTest
   jobs:
   - job: load_tests
-    timeoutInMinutes: 120
+    timeoutInMinutes: 180
     pool:
       vmImage: 'ubuntu-latest'
 #      name: highcpu

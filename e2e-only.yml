@@ -30,28 +30,28 @@ jobs:
           continueOnError: true
           inputs:
             script: |
-               HAIBUN_ENVC=${_ENVC} npm run test-pipeline
+               HAIBUN_ENVC=${_ENVC} npm run test-pipeline-login
 
         - task: CmdLine@2 
           displayName: 'Running regression e2e tests'
           continueOnError: true        
           inputs:
             script: |
-              HAIBUN_ENVC=${_ENVC} npm run test-pipeline
+              HAIBUN_ENVC=${_ENVC} npm run test-pipeline-regressions
 
         - task: CmdLine@2
           displayName: 'Generate sarif indexes'
           continueOnError: true
           inputs:
             script: |
-              HAIBUN_O_AZURESTORAGEBLOB_ACCOUNT=${_O_AZURESTORAGEBLOB_ACCOUNT} HAIBUN_O_AZURESTORAGEBLOB_KEY=${_O_AZURESTORAGEBLOB_KEY} HAIBUN_O_OUTREVIEWS_URI_ARGS=${_O_OUTREVIEWS_URI_ARGS} npm run test-pipeline
+              HAIBUN_O_AZURESTORAGEBLOB_ACCOUNT=${_O_AZURESTORAGEBLOB_ACCOUNT} HAIBUN_O_AZURESTORAGEBLOB_KEY=${_O_AZURESTORAGEBLOB_KEY} HAIBUN_O_OUTREVIEWS_URI_ARGS=${_O_OUTREVIEWS_URI_ARGS} npm run test-pipeline-index-sarif
 
         - task: CmdLine@2
           displayName: 'Generate test result indexes'
           continueOnError: true
           inputs:
             script: |
-              HAIBUN_O_AZURESTORAGEBLOB_ACCOUNT=${_O_AZURESTORAGEBLOB_ACCOUNT} HAIBUN_O_AZURESTORAGEBLOB_KEY=${_O_AZURESTORAGEBLOB_KEY} HAIBUN_O_OUTREVIEWS_URI_ARGS=${_O_OUTREVIEWS_URI_ARGS}  npm run test-pipeline
+              HAIBUN_O_AZURESTORAGEBLOB_ACCOUNT=${_O_AZURESTORAGEBLOB_ACCOUNT} HAIBUN_O_AZURESTORAGEBLOB_KEY=${_O_AZURESTORAGEBLOB_KEY} HAIBUN_O_OUTREVIEWS_URI_ARGS=${_O_OUTREVIEWS_URI_ARGS}  npm run test-pipeline-indexes
 
   # - job: publish_e2e_artifacts
   #   dependsOn: e2etests

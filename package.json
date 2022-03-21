@@ -12,6 +12,12 @@
     "index-sarif": "haibun-cli index-sarif/ ",
     "index-sarif-local": "haibun-cli index-sarif-local/ ",
     "test-regressions": "HAIBUN_O_WEBPLAYWRIGHT_HEADLESS=true haibun-cli test regressions/",
+
+    "test-pipeline-login": "HAIBUN_TRACE=true HAIBUN_O_WEBPLAYWRIGHT_CAPTURE_VIDEO=true HAIBUN_O_WEBPLAYWRIGHT_HEADLESS=true HAIBUN_O_OUTREVIEWS_REVIEWS_STORAGE=StorageFS HAIBUN_O_OUTREVIEWS_REVIEWS_TRACE_STORAGE=StorageFS  haibun-cli test account-login/",
+    "test-pipeline-regressions": "HAIBUN_TRACE=true HAIBUN_O_WEBPLAYWRIGHT_CAPTURE_VIDEO=true HAIBUN_O_WEBPLAYWRIGHT_HEADLESS=true HAIBUN_O_OUTREVIEWS_REVIEWS_STORAGE=StorageFS HAIBUN_O_OUTREVIEWS_REVIEWS_TRACE_STORAGE=StorageFS  haibun-cli test regressions/",
+    "test-pipeline-index-sarif": "HAIBUN_DEST=sarif HAIBUN_O_SARIF_TRACE_STORAGE=AzureStorageBlob HAIBUN_DEST=sarif HAIBUN_O_SARIF_TRACE_STORAGE=AzureStorageBlobHAIBUN_DEST=sarif HAIBUN_O_SARIF_TRACE_STORAGE=AzureStorageBlob HAIBUN_O_SARIF_INDEX_STORAGE=StorageFS HAIBUN_O_AZURESTORAGEBLOB_DESTINATION='staticanalysis-sc'  haibun-cli index-sarif",
+    "test-pipeline-indexes": "HAIBUN_O_OUTREVIEWS_PUBLISH_STORAGE=AzureStorageBlob HAIBUN_O_OUTREVIEWS_INDEX_STORAGE=StorageFS HAIBUN_O_OUTREVIEWS_REVIEWS_STORAGE=AzureStorageBlob HAIBUN_O_AZURESTORAGEBLOB_DESTINATION=e2e-reviews-sc  haibun-cli publish",
+
     "test-lang": "HAIBUN_O_WEBPLAYWRIGHT_HEADLESS=false haibun-cli test lang/",
     "test-100x1": "HAIBUN_O_WEBPLAYWRIGHT_HEADLESS=true HAIBUN_LOOPS=100 HAIBUN_MEMBERS=1 haibun-cli test",
     "test-2x2": "HAIBUN_O_WEBPLAYWRIGHT_HEADLESS=true HAIBUN_LOOPS=2 HAIBUN_MEMBERS=2 haibun-cli test",

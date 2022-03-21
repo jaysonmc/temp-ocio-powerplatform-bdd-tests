@@ -30,7 +30,6 @@ jobs:
           continueOnError: true
           inputs:
             script: |
-              npm run
                HAIBUN_ENVC=${_ENVC} npm run test-pipeline-login
 
         - task: CmdLine@2 

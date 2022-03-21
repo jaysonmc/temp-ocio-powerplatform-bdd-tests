@@ -28,7 +28,8 @@ jobs:
         - task: CmdLine@2  
           displayName: 'Running login e2e tests'
           continueOnError: true
-          env: { HAIBUN_ENVC: _ENVC }
+          env:
+            HAIBUN_ENVC: ${_ENVC}
           inputs:
             script: |
               npm run test-pipeline

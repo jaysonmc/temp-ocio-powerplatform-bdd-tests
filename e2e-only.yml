@@ -32,6 +32,7 @@ jobs:
             HAIBUN_ENVC: ${_ENVC}
           inputs:
             script: |
+              set
               npm run test-pipeline
 
         - task: CmdLine@2 

@@ -39,7 +39,7 @@ jobs:
           env: { HAIBUN_ENVC: HAIBUN_ENVC}
           inputs:
             script: |
-              npm run test-pipeline
+              HAIBUN_O_AZURESTORAGEBLOB_KEY="" HAIBUN_O_AZURESTORAGEBLOB_ACCOUNT="" npm run test-pipeline
 
         - task: CmdLine@2
           displayName: 'Generate sarif indexes'

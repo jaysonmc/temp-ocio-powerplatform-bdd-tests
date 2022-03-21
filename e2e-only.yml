@@ -28,7 +28,7 @@ jobs:
         - task: CmdLine@2  
           displayName: 'Running login e2e tests'
           continueOnError: true
-          env: { HAIBUN_ENVC: HAIBUN_ENVC }
+          env: { HAIBUN_ENVC: _ENVC }
           inputs:
             script: |
               npm run test-pipeline
@@ -36,15 +36,15 @@ jobs:
         - task: CmdLine@2 
           displayName: 'Running regression e2e tests'
           continueOnError: true
-          env: { HAIBUN_ENVC: HAIBUN_ENVC}
+          env: { HAIBUN_ENVC: _ENVC}
           inputs:
             script: |
-              HAIBUN_O_AZURESTORAGEBLOB_KEY="" HAIBUN_O_AZURESTORAGEBLOB_ACCOUNT="" npm run test-pipeline
+              npm run test-pipeline
 
         - task: CmdLine@2
           displayName: 'Generate sarif indexes'
           continueOnError: true
-          env: { HAIBUN_O_AZURESTORAGEBLOB_ACCOUNT: HAIBUN_O_AZURESTORAGEBLOB_ACCOUNT, HAIBUN_O_AZURESTORAGEBLOB_KEY: HAIBUN_O_AZURESTORAGEBLOB_KEY, HAIBUN_O_OUTREVIEWS_URI_ARGS: HAIBUN_O_OUTREVIEWS_URI_ARGS }
+          env: { HAIBUN_O_AZURESTORAGEBLOB_ACCOUNT: _O_AZURESTORAGEBLOB_ACCOUNT, HAIBUN_O_AZURESTORAGEBLOB_KEY: _O_AZURESTORAGEBLOB_KEY, HAIBUN_O_OUTREVIEWS_URI_ARGS: _O_OUTREVIEWS_URI_ARGS }
           inputs:
             script: |
               npm run test-pipeline
@@ -52,7 +52,7 @@ jobs:
         - task: CmdLine@2
           displayName: 'Generate test result indexes'
           continueOnError: true
-          env: { HAIBUN_O_AZURESTORAGEBLOB_ACCOUNT: HAIBUN_O_AZURESTORAGEBLOB_ACCOUNT, HAIBUN_O_AZURESTORAGEBLOB_KEY: HAIBUN_O_AZURESTORAGEBLOB_KEY, HAIBUN_O_OUTREVIEWS_URI_ARGS: HAIBUN_O_OUTREVIEWS_URI_ARGS }
+          env: { HAIBUN_O_AZURESTORAGEBLOB_ACCOUNT: _O_AZURESTORAGEBLOB_ACCOUNT, HAIBUN_O_AZURESTORAGEBLOB_KEY: _O_AZURESTORAGEBLOB_KEY, HAIBUN_O_OUTREVIEWS_URI_ARGS: _O_OUTREVIEWS_URI_ARGS }
           inputs:
             script: |
               npm run test-pipeline

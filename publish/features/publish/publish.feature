@@ -1,7 +1,7 @@
 
 Feature: publish results
   
-create reviews from default,regressions
-create indexes from default,regressions,indexed:sarif
-publish results from default,regressions
+create reviews from e2e,regressions
+create indexes from e2e,regressions,indexed:sarif
+publish results from e2e,regressions
 

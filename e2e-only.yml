@@ -1,10 +1,10 @@
 resources:
-  repositories:
-  - repository: e2etest # The name used to reference this repository in the checkout step
-    type: github
-    endpoint: jaysonmc
-    name: jaysonmc/temp-ocio-powerplatform-bdd-tests
-    ref: publish-reviews-sarif
+  # repositories:
+  # - repository: e2etest # The name used to reference this repository in the checkout step
+  #   type: github
+  #   endpoint: jaysonmc
+  #   name: jaysonmc/temp-ocio-powerplatform-bdd-tests
+  #   ref: publish-reviews-sarif
 
 trigger:
 - test-e2e
@@ -19,7 +19,7 @@ jobs:
         volumes: [e2e-reviews]
 
     steps:
-        - checkout: e2etest     
+        # - checkout: e2etest     
         - task: Npm@1
           inputs:
             command: 'install'

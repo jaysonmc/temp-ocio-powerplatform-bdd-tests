@@ -34,16 +34,16 @@
   "keywords": [],
   "license": "ISC",
   "dependencies": {
-    "@haibun/azure": "^1.8.1",
-    "@haibun/cli": "^1.8.1",
-    "@haibun/core": "^1.8.1",
-    "@haibun/domain-storage": "^1.8.1",
-    "@haibun/domain-webpage": "^1.8.1",
-    "@haibun/out-review": "^1.8.1",
-    "@haibun/out-xunit": "^1.8.1",
-    "@haibun/sarif": "^1.8.1",
-    "@haibun/storage-fs": "^1.8.1",
-    "@haibun/web-playwright": "^1.8.1",
-    "@haibun/web-server-express": "^1.8.1"
+    "@haibun/azure": "^1.8.2",
+    "@haibun/cli": "^1.8.2",
+    "@haibun/core": "^1.8.2",
+    "@haibun/domain-storage": "^1.8.2",
+    "@haibun/domain-webpage": "^1.8.2",
+    "@haibun/out-review": "^1.8.2",
+    "@haibun/out-xunit": "^1.8.2",
+    "@haibun/sarif": "^1.8.2",
+    "@haibun/storage-fs": "^1.8.2",
+    "@haibun/web-playwright": "^1.8.2",
+    "@haibun/web-server-express": "^1.8.2"
   }
 }

@@ -1,4 +1,4 @@
-resources:
+# resources:
   # repositories:
   # - repository: e2etest # The name used to reference this repository in the checkout step
   #   type: github

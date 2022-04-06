@@ -14,6 +14,7 @@
     "test-regressions": "HAIBUN_O_WEBPLAYWRIGHT_HEADLESS=true haibun-cli test regressions/",
 
     "test-pipeline-login": "HAIBUN_TRACE=true HAIBUN_O_WEBPLAYWRIGHT_CAPTURE_VIDEO=true HAIBUN_O_WEBPLAYWRIGHT_HEADLESS=true haibun-cli test account-login/",
+    "test-pipeline-positive": "HAIBUN_TRACE=true HAIBUN_O_WEBPLAYWRIGHT_CAPTURE_VIDEO=true HAIBUN_O_WEBPLAYWRIGHT_HEADLESS=true haibun-cli test positive",
     "test-pipeline-regressions": "HAIBUN_TRACE=true HAIBUN_O_WEBPLAYWRIGHT_CAPTURE_VIDEO=true HAIBUN_O_WEBPLAYWRIGHT_HEADLESS=true haibun-cli test regressions/",
     "test-pipeline-index-sarif": "haibun-cli index-sarif",
     "test-pipeline-indexes": "haibun-cli publish",
@@ -34,16 +35,16 @@
   "keywords": [],
   "license": "ISC",
   "dependencies": {
-    "@haibun/azure": "^1.8.2",
-    "@haibun/cli": "^1.8.2",
-    "@haibun/core": "^1.8.2",
-    "@haibun/domain-storage": "^1.8.2",
-    "@haibun/domain-webpage": "^1.8.2",
-    "@haibun/out-review": "^1.8.2",
-    "@haibun/out-xunit": "^1.8.2",
-    "@haibun/sarif": "^1.8.2",
-    "@haibun/storage-fs": "^1.8.2",
-    "@haibun/web-playwright": "^1.8.2",
-    "@haibun/web-server-express": "^1.8.2"
+    "@haibun/azure": "^1.8.3",
+    "@haibun/cli": "^1.8.3",
+    "@haibun/core": "^1.8.3",
+    "@haibun/domain-storage": "^1.8.3",
+    "@haibun/domain-webpage": "^1.8.3",
+    "@haibun/out-review": "^1.8.3",
+    "@haibun/out-xunit": "^1.8.3",
+    "@haibun/sarif": "^1.8.3",
+    "@haibun/storage-fs": "^1.8.3",
+    "@haibun/web-playwright": "^1.8.3",
+    "@haibun/web-server-express": "^1.8.3"
   }
 }

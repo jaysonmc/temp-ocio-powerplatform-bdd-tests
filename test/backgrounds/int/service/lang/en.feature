@@ -1,3 +1,5 @@
+Settings for the English language service.
+
 Set PowerAppsHome to https://workplace.alpha.canada.ca/en/
 Set Home to https://workplace.alpha.canada.ca/en/
 Set ExternalSignIn URI to https://workplace.alpha.canada.ca/en/SignIn?ReturnUrl=%2Fen%2Findex%2F

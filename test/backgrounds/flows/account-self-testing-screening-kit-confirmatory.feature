@@ -1,4 +1,5 @@
-Self Testing Step 2.
+Self Testing Step 2. Choose Lab-PCR and proceeed to the Screening Results page.
+
   On the AccountSelfTestingScreeningKit webpage
   When I select Lab-PCR or Other Molecular Confirmatory Test for //*[@id="kitdropdown"]
   And I click the button //*[@id="btn-nextMask"]

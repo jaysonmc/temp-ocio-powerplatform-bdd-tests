@@ -7,6 +7,7 @@
   "description": "bdd tests for ocio-powerplatform",
   "scripts": {
     "test": "HAIBUN_O_WEBPLAYWRIGHT_HEADLESS=false haibun-cli test",
+    "clear-test": "HAIBUN_SETTING='test' haibun-cli clear",
     "publish": "haibun-cli publish",
     "publish-local": "haibun-cli publish-local",
     "index-sarif": "haibun-cli index-sarif/ ",
@@ -14,6 +15,7 @@
     "test-regressions": "HAIBUN_O_WEBPLAYWRIGHT_HEADLESS=true haibun-cli test regressions/",
 
     "test-pipeline-login": "HAIBUN_TRACE=true HAIBUN_O_WEBPLAYWRIGHT_CAPTURE_VIDEO=true HAIBUN_O_WEBPLAYWRIGHT_HEADLESS=true haibun-cli test account-login/",
+    "test-pipeline-confirmatory-inconclusive": "HAIBUN_TRACE=true HAIBUN_O_WEBPLAYWRIGHT_CAPTURE_VIDEO=true HAIBUN_O_WEBPLAYWRIGHT_HEADLESS=true haibun-cli test y-inconclusive",
     "test-pipeline-positive": "HAIBUN_TRACE=true HAIBUN_O_WEBPLAYWRIGHT_CAPTURE_VIDEO=true HAIBUN_O_WEBPLAYWRIGHT_HEADLESS=true haibun-cli test positive",
     "test-pipeline-regressions": "HAIBUN_TRACE=true HAIBUN_O_WEBPLAYWRIGHT_CAPTURE_VIDEO=true HAIBUN_O_WEBPLAYWRIGHT_HEADLESS=true haibun-cli test regressions/",
     "test-pipeline-index-sarif": "haibun-cli index-sarif",
@@ -35,16 +37,16 @@
   "keywords": [],
   "license": "ISC",
   "dependencies": {
-    "@haibun/azure": "^1.8.6",
-    "@haibun/cli": "^1.8.6",
-    "@haibun/core": "^1.8.6",
-    "@haibun/domain-storage": "^1.8.6",
-    "@haibun/domain-webpage": "^1.8.6",
-    "@haibun/out-review": "^1.8.6",
-    "@haibun/out-xunit": "^1.8.6",
-    "@haibun/sarif": "^1.8.6",
-    "@haibun/storage-fs": "^1.8.6",
-    "@haibun/web-playwright": "^1.8.6",
-    "@haibun/web-server-express": "^1.8.6"
+    "@haibun/azure": "^1.8.7",
+    "@haibun/cli": "^1.8.7",
+    "@haibun/core": "^1.8.7",
+    "@haibun/domain-storage": "^1.8.7",
+    "@haibun/domain-webpage": "^1.8.7",
+    "@haibun/out-review": "^1.8.7",
+    "@haibun/out-xunit": "^1.8.7",
+    "@haibun/sarif": "^1.8.7",
+    "@haibun/storage-fs": "^1.8.7",
+    "@haibun/web-playwright": "^1.8.7",
+    "@haibun/web-server-express": "^1.8.7"
   }
 }

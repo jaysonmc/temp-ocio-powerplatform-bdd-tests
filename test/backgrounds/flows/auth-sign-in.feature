@@ -1,5 +1,6 @@
 Sign into the service, and wait for the user menu.
 
+
   On the Home webpage
   When I click the button SignInMenu
   Then the URI should start with Home
